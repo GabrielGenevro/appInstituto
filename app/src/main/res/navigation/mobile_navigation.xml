@@ -22,4 +22,10 @@
         android:name="br.edu.ifsc.chapeco.prog3.instituto.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_cad_aluno"
+        android:name="br.edu.ifsc.chapeco.prog3.instituto.Cadastro"
+        android:label="@string/title_cad_aluno"
+        tools:layout="@layout/fragment_cadastro" />
 </navigation>
