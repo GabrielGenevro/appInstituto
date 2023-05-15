@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cadastro">
+    tools:context=".ui.aluno.Cadastro">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                 android:text="Nome" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/txnome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -34,7 +34,7 @@
                 android:text="Email" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/txemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -47,7 +47,7 @@
                 android:text="CPF" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/txcpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -60,7 +60,7 @@
                 android:text="RG" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/txrg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -73,7 +73,7 @@
                 android:text="Telefone" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/txtelefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -86,7 +86,7 @@
                 android:text="Endereço" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
+                android:id="@+id/txendereco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -99,14 +99,14 @@
                 android:text="Senha" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName7"
+                android:id="@+id/txsenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btsalvar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Salvar" />
