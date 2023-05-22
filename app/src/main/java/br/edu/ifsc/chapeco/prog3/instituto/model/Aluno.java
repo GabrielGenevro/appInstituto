@@ -3,7 +3,7 @@ package br.edu.ifsc.chapeco.prog3.instituto.model;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Cadastro {
+public class Aluno {
 
     //atributos
     private int id;
@@ -17,7 +17,7 @@ public class Cadastro {
     private int tipo;
 
     //construtor
-    public Cadastro(JSONObject jo)
+    public Aluno(JSONObject jo)
     {
         try {
             this.id = jo.getInt("id");
@@ -51,7 +51,7 @@ public class Cadastro {
         }
         return json;
     }
-    public Cadastro()
+    public Aluno()
     {
         this.email = "";
         this.nome = "";
