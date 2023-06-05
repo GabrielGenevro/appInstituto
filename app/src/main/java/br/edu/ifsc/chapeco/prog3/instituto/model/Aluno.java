@@ -6,7 +6,7 @@ import org.json.JSONObject;
 public class Aluno {
 
     //atributos
-    private int id;
+    private int matricula;
     private String nome;
     private String email;
     private String cpf;
@@ -20,15 +20,14 @@ public class Aluno {
     public Aluno(JSONObject jo)
     {
         try {
-            this.id = jo.getInt("id");
-            this.email = jo.getString("email");
             this.nome = jo.getString("nome");
+            this.email = jo.getString("email");
             this.cpf = jo.getString("cpf");
             this.rg = jo.getString("rg");
             this.telefone = jo.getString("telefone");
             this.endereco = jo.getString("endereco");
             this.senha = jo.getString("senha");
-            this.tipo = jo.getInt("cdtipo");
+            this.matricula = jo.getInt("matricula");
         }catch(JSONException je)
         {
 
@@ -37,15 +36,14 @@ public class Aluno {
     public JSONObject toJsonObject() {
         JSONObject json = new JSONObject();
         try {
-            json.put("id", this.id);
-            json.put("email", this.email);
             json.put("nome", this.nome);
+            json.put("email", this.email);
             json.put("cpf", this.cpf);
             json.put("rg", this.rg);
             json.put("telefone", this.telefone);
             json.put("endereco", this.endereco);
             json.put("senha", this.senha);
-            json.put("cdtipo", this.tipo);
+            json.put("matricula", this.matricula);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -60,16 +58,15 @@ public class Aluno {
         this.telefone = "+55";
         this.endereco = "";
         this.senha = "";
-        this.tipo = 0;
     }
 
     //metodos
 
     public int getId() {
-        return id;
+        return matricula;
     }
     public void setId(int id) {
-        this.id = id;
+        this.matricula = id;
     }
 
     public String getNome()
@@ -100,15 +97,12 @@ public class Aluno {
     {
         return this.senha;
     }
-    public int getTipo()
-    {
-        return this.tipo;
-    }
+
 
     public boolean setNome(String nome)
     {
         boolean valido = false;
-        if((nome.length() > 5))
+        if((nome.length() >= 5))
         {
             this.nome = nome;
             valido = true;

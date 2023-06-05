@@ -106,10 +106,12 @@ public class Cadastro extends Fragment implements View.OnClickListener, Response
                 aluno.setTelefone(this.txtelefone.getText().toString());
                 aluno.setEndereco(this.txendereco.getText().toString());
                 aluno.setSenha(this.txsenha.getText().toString());
-
+                //
+                //String json
+                String json = aluno.toJsonObject().toString();
                 //request para servidor REST
                 jsonObjectReq = new JsonObjectRequest(Request.Method.POST,
-                        "http://10.0.2.2:8080/segServer/rest/usuario",
+                        "http://10.0.2.2/cadaluno.php",
                         aluno.toJsonObject(), this, this);
                 requestQueue.add(jsonObjectReq);
                 break;
