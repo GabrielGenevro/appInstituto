@@ -14,7 +14,7 @@ public class Aluno {
     private String telefone;
     private String endereco;
     private String senha;
-    private int tipo;
+
 
     //construtor
     public Aluno(JSONObject jo)
@@ -170,16 +170,6 @@ public class Aluno {
         if(senha.length() > 5)
         {
             this.senha = senha;
-            valido = true;
-        }
-        return valido;
-    }
-    public boolean setTipo(String tipo)
-    {
-        boolean valido = false;
-        if(tipo.length() == 1)
-        {
-            this.tipo = Integer.parseInt(tipo);
             valido = true;
         }
         return valido;

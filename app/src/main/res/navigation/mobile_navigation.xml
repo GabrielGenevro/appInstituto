@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="br.edu.ifsc.chapeco.prog3.instituto.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/navigation_notifications"
         android:name="br.edu.ifsc.chapeco.prog3.instituto.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
@@ -28,4 +22,10 @@
         android:name="br.edu.ifsc.chapeco.prog3.instituto.ui.aluno.Cadastro"
         android:label="@string/title_cad_aluno"
         tools:layout="@layout/fragment_cadastro" />
+    <fragment
+        android:id="@+id/navigation_con_aluno"
+        android:name="br.edu.ifsc.chapeco.prog3.instituto.ui.aluno.ConAlunoFragment"
+        android:label="fragment_con_aluno_list"
+        tools:layout="@layout/fragment_con_aluno_list" />
+
 </navigation>
