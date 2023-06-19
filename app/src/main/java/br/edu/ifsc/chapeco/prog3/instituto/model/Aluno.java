@@ -27,10 +27,11 @@ public class Aluno {
             this.telefone = jo.getString("telefone");
             this.endereco = jo.getString("endereco");
             this.senha = jo.getString("senha");
-            this.matricula = jo.getInt("matricula");
+            Integer numero = (int) jo.get("matricula");
+            this.setId(numero);
         }catch(JSONException je)
         {
-
+            je.printStackTrace();
         }
     }
     public JSONObject toJsonObject() {
@@ -58,6 +59,7 @@ public class Aluno {
         this.telefone = "+55";
         this.endereco = "";
         this.senha = "";
+
     }
 
     //metodos
